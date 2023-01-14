@@ -263,3 +263,19 @@ td:first-child {
 td:last-child {
     width: 150px;
 }
+
+
+@media screen and (max-width:655px) {
+    .inputInfoGroup {
+        width: 100%;
+    }
+    .mixInputs input[type="number"] {
+        width: 100%;
+    }
+    .mixInputs .inputInfoGroup:first-child input {
+        border-radius: 10px 10px 0 0;
+    }
+    .mixInputs .inputInfoGroup:last-child input {
+        border-radius: 0 0 10px 10px;
+    }
+}
