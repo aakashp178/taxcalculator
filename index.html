@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <section class="mainWrap">
+        <div class="container">
+            <div class="calculationBlock">
+                <h1 class="heading">Calculate Your TAX</h1>
+                <div class="flexbox">
+                    <form action="">
+                        <label for="totalIncome">Total Income</label>
+                        <div class="mixInputs">
+                            <div class="inputInfoGroup">
+                                <input class="grossSalaryInput" type="number" placeholder="Gross Salary"
+                                    autocomplete="off" autofocus>
+                                <span class="info">i</span>
+                                <div class="infoBox">
+                                    Your CTC Is Not Your Taxable Income. <br />
+                                    the amount received by an employee without any tax deductions. <br />
+                                    <b>Gross salary = Basic salary + HRA + Other allowances</b>
+                                </div>
+                            </div>
+                            <div class="inputInfoGroup">
+                                <input class="bonusAmtInput" type="number" placeholder="Bonus / Extra Income"
+                                    autocomplete="off">
+                                <span class="info">i</span>
+                                <div class="infoBox">
+                                    Employees are often rewarded with bonus on their existing salary in a financial
+                                    year. <br />
+                                    it is considered taxable in the financial year in which it is declared even though
+                                    you might receive it in the next financial year.
+                                </div>
+                            </div>
+                            <div class="inputInfoGroup">
+                                <input class="extraAmtInput" type="number" placeholder="Other Income"
+                                    autocomplete="off">
+                                <span class="info">i</span>
+                                <div class="infoBox">
+                                    Other income is income that does not come from a company's main business, such as
+                                    interest. <br />
+                                    Examples of other income include income from interest, rent, and gains resulting
+                                    from the sale of fixed assets.
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <label for="exemption">Exemption</label>
+                        <div class="labelGroup">
+                            <label for="totalIncome">HRA <span>(<a href="/hra.html">HRA Calculator</a>)</span></label>
+                            <label for="totalIncome">LTA</label>
+                            <label for="totalIncome">Other Exemption</label>
+                        </div>
+                        <div class="mixInputs">
+                            <div class="inputInfoGroup">
+                                <input class="hra" type="number" placeholder="HRA" autocomplete="off">
+                                <span class="info">i</span>
+                                <div class="infoBox">
+                                    Salaried individuals, who live in rented houses, can claim the House Rent Allowance
+                                    (HRA) to lower their taxes – partially or wholly. <br />
+                                    If you don’t live in a rented accommodation, this allowance is fully taxable. <br />
+                                    The deduction available is the least of the following amounts: <br />
+                                    Actual HRA received <br />
+                                    50% of [basic salary + DA] for those living in metro cities<br />
+                                    40% of [basic salary + DA] for those living in non-metros<br />
+                                    Actual rent paid should be less than 10% of basic salary + DA
+                                </div>
+                            </div>
+                            <div class="inputInfoGroup">
+                                <input class="lta" type="number" placeholder="LTA" autocomplete="off">
+                                <span class="info">i</span>
+                                <div class="infoBox">
+                                    Leave Travel Allowance exemption is available for only two journeys performed in a
+                                    block of four calendar years. <br>
+                                    it is an exemption for allowance/assistance received by the employee from his
+                                    employer for travelling on leave.
+                                </div>
+                            </div>
+                            <div class="inputInfoGroup">
+                                <input class="otherExemption" type="number" placeholder="Other Exemption"
+                                    autocomplete="off">
+                                <span class="info">i</span>
+                                <div class="infoBox">
+                                    we try to list some of the major deductions and allowances, available to the
+                                    salaried persons, using which one can reduce their income tax liability. <br>
+                                    Mobile reimbursement <br>
+                                    Books and Periodicals <br>
+                                    Food coupons <br>
+                                    Relocation allowance <br>
+                                    Children Allowances
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <label for="deductions">Deductions <span>(Don't add standard Deduction)</span></label>
+                        <div class="labelGroup">
+                            <label for="totalIncome">EPF, PPF, etc..</label>
+                            <label for="totalIncome">Medical Insurance</label>
+                            <label for="totalIncome">Other Deductions</label>
+                        </div>
+                        <div class="mixInputs">
+                            <div class="inputInfoGroup">
+                                <input class="input80C" type="number" placeholder="Section 80C" autocomplete="off">
+                                <span class="info">i</span>
+                                <div class="infoBox">
+                                    Section 80C is allows to reduce taxable income by making tax saving investments or
+                                    incurring eligible expenses. It allows a maximum deduction of Rs 1.5 lakh every year
+                                    from the taxpayers total income. <br>
+                                    Section 80C includes subsections , 80CCC, 80CCD (1) , 80CCD (1b) and 80CCD (2). <br>
+                                    Section 80C Deductions List : <br>
+                                    EPF, PPF, ELSS, NPS, ULIP, TAX saving FD/MF, Senior citizen savings, National,
+                                    Sukanya Samriddhi Yojana
+                                </div>
+                            </div>
+                            <div class="inputInfoGroup">
+                                <input class="input80D" type="number" placeholder="Section 80D" autocomplete="off">
+                                <span class="info">i</span>
+                                <div class="infoBox">
+                                    Section 80D – Medical Insurance <br>
+                                    You (as an individual or HUF) can claim a deduction of Rs.25,000 under section 80D
+                                    on insurance for self, spouse and dependent children. An additional deduction for
+                                    insurance of parents is available up to Rs 25,000, if they are less than 60 years of
+                                    age. If the parents are aged above 60, the deduction amount is Rs 50,000, which has
+                                    been increased in Budget 2018 from Rs 30,000. <br>
+                                    In case, both taxpayer and parent(s) are 60 years or above, the maximum deduction
+                                    available under this section is up to Rs.1 lakh. <br>
+                                    From FY 2015-16 a cumulative additional deduction of Rs. 5,000 is allowed for
+                                    preventive health check.
+                                </div>
+                            </div>
+                            <div class="inputInfoGroup">
+                                <input class="otherDeductions" type="number" placeholder="Other Section 80"
+                                    autocomplete="off">
+                                <span class="info">i</span>
+                                <div class="infoBox">
+                                    Add here your add Deductions which is non taxable. <br>
+                                    80CCD(1B), 80TTA(1), 80TTB, 80GG, 80E, 80EE, 80D, 80DD, 80DDB, 80U, 80GGB, 80GGC,
+                                    80RRB, 24(b)
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="taxAmoutBlock">
+                        <div class="taxCard">
+                            <h6 class="title">Your total TAX amount will be</h6>
+                            <h2 class="finalAmt">Rs.<span></span></h2>
+                            <h6 class="old">Old Tax Regime</h6>
+                            <h6 class="new">Old Tax Regime =<span class="oldAmt"> 00000</span></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detailBlock">
+                    <div class="detailBlockData">
+                        <table>
+                            <caption class="one">
+                                <h4 class="TotalIncomeText">Total Income: <span>120000</span></h4>
+                            </caption>
+                            <tr>
+                                <td>HRA:</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>LTA:</td>
+                                <td>150</td>
+                            </tr>
+                            <tr>
+                                <td>Other Exemptions:</td>
+                                <td>150</td>
+                            </tr>
+                        </table>
+                        <table>
+                            <caption class="one">
+                                <h4 class="TotalIncomeText">Taxable Income: <span>120000</span></h4>
+                            </caption>
+                            <tr>
+                                <td>80C (EPF, PPF, etc..)</td>
+                                <td>50</td>
+                            </tr>
+                            <tr>
+                                <td>80D (Medical)</td>
+                                <td>150</td>
+                            </tr>
+                            <tr>
+                                <td>Other Deductions</td>
+                                <td>150</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
