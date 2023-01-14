@@ -1,0 +1,49 @@
+Exemption  and deductions = https://cleartax.in/s/income-tax-allowances-and-deductions
+80c = https://cleartax.in/s/80c-80-deductions
+
+80c Limit 1,50,000
+80C includes subsections , 80CCC, 80CCD (1) , 80CCD (1b) and 80CCD (2).
+80CCD (1b) Deduction for NPS ,Rs 50,000 allowed u/s 80CCD(1b) - Rs. 50,000
+80CCC Deduction for life insurance annuity plan.
+80CCD (1) Deduction for NPS
+80CCD (2) Deduction for NPS - Maximum up to 10% of salary
+
+Section 80 TTA – Interest on Savings Account - Maximum up to 10,000
+If you are an individual or an HUF, you may claim a deduction of maximum Rs 10,000 against interest income from your savings account with a bank, co-operative society, or post office. Do include the interest from savings bank account in other income.
+Section 80TTA deduction is not available on interest income from fixed deposits, recurring deposits, or interest income from corporate bonds.
+
+Section 80GG – House Rent Paid
+Section 80E – Interest on Education Loan - Interest paid for a period of 8 years
+Section 80EE – Interest on Home Loan - Rs 50,000
+Section 80D – Medical Insurance -– Rs. 25,000 OR Rs. 50,000
+Section 80DD – Disabled Dependent – Rs. 75,000, Rs. 1,25,000
+Section 80DDB – Medical Expenditure
+Section 80U – Physical Disability
+Section 80G – Donations
+Section 80GGB – Company Contribution
+Section 80RRB – Royalty of a Patent
+Section 80 TTB – Interest Income - Maximum up to 50,000
+
+
+
+How to calculate inputHRA
+HRA received from your employer
+Actual rent paid minus 10% of salary
+50% of basic salary for those living in metro cities
+40% of basic salary for those living in non-metro cities
+Basic salary received, Dearness Allowance (DA) received, HRA received, Total Rent Paid, Do you live in Delhi, Mumbai, Kolkata or Chennai?
+
+
+
+All Exemption
+House Rent Allowance
+Standard Deduction
+Leave Travel Allowance (LTA)
+Mobile reimbursement
+Books and Periodicals
+Food coupons
+Relocation allowance
+Children Allowances
+
+
+https://codepen.io/jalal_aljhny/pen/wvxKzNy
