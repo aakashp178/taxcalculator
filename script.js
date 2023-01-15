@@ -106,7 +106,7 @@ document.querySelector('.hraCalcBtn').addEventListener('click', function() {
     calculateHra(basicSalary.value, totalHra.value, rentpaid.value, isLiveMetroCity.checked);
 });
 
-document.querySelector('#hraModal').addEventListener('click', () => {
+document.querySelector('.hraModal').addEventListener('click', () => {
     document.querySelector('.hraPopup').style.display = 'flex';
 })
 document.querySelector('.closeIcon').addEventListener('click', () => {
