@@ -11,6 +11,7 @@ var lta = document.querySelector('.lta');
 var otherExemption = document.querySelector('.otherExemption');
 
 var standardDeduction = 50000;
+var FinalHRA = 0;
 
 grossSalary.addEventListener('input', calculateTax);
 bonusAmt.addEventListener('input', calculateTax);
@@ -29,12 +30,8 @@ function calculateTax() {
     var totalIncome = Number(grossSalary.value) + Number(bonusAmt.value) + Number(extraAmt.value);
     var totalDeductions = Number(input80C.value) + Number(input80D.value) + Number(otherDeductions.value);
     var totalExemption = Number(hra.value) + Number(lta.value) + Number(otherExemption.value);
-    
-    console.log(totalIncome, totalDeductions, totalExemption); 
-    
-    console.log(totalIncome, totalIncome > 500000);
-    if(totalIncome > 500000) {
-        console.log('HI');
+                
+    if(totalIncome > 500000) {        
         // 1. Remove all Exemption from total Income
         var taxableIncome = totalIncome  - totalExemption;
         // 2. Remove all deductions from taxable Income
@@ -91,3 +88,34 @@ function calculateTax() {
     }
     return allDetail;
 }
+
+var basicSalary = document.querySelector('#basicSalary');
+var totalHra = document.querySelector('#totalHra');
+var rentpaid = document.querySelector('#rentPaid');
+var isLiveMetroCity = document.querySelector('#isLiveMetroCity');
+
+function calculateHra(basicSalary, totalHra, rentpaid, isLiveMetroCity) {    
+    hraCal2 = rentpaid - basicSalary*10/100;
+    hraCal3 = isLiveMetroCity === true ? basicSalary*50/100 : basicSalary*40/100;    
+    FinalHRA = Math.min(totalHra, hraCal2, hraCal3).toFixed();    
+    document.querySelector('.hraAmt').textContent = FinalHRA;
+    document.querySelector('.hracalTxt').style.display = "block";
+}
+
+document.querySelector('.hraCalcBtn').addEventListener('click', function() {
+    calculateHra(basicSalary.value, totalHra.value, rentpaid.value, isLiveMetroCity.checked);
+});
+
+document.querySelector('#hraModal').addEventListener('click', () => {
+    document.querySelector('.hraPopup').style.display = 'flex';
+})
+document.querySelector('.closeIcon').addEventListener('click', () => {
+    basicSalary.value = '';
+    totalHra.value = '';
+    rentpaid.value = '';
+    isLiveMetroCity.checked = false;
+    if(FinalHRA) {
+        hra.value = FinalHRA;
+    }
+    document.querySelector('.hraPopup').style.display = 'none';
+})
