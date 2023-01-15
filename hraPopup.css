@@ -1,0 +1,125 @@
+.hraPopup {
+    display: none;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: #3a4e48ed; */
+    background: #000000f7;
+}
+.popupBlock h1 {
+    margin-bottom: 20px;
+}
+.closeIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+.closeIcon:hover {
+    color: var(--dark-colo);
+}
+.popupBlock {
+    position: relative;
+    background: var(--light-color);
+    max-width: var(--mid-dark);
+    padding: 20px 30px;
+}
+.popupBlock form {    
+}
+
+.liGroup {
+    width: 100%;
+    max-width: 350px;
+    height: 40px;
+    border: 1px solid var(--dark-color);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background: #EAEDE8;
+}
+.liGroup:last-child {
+    margin-bottom: 0;
+}
+.liGroup label {
+    font-size: 14px;
+    line-height:24px;
+    padding: 5px 10px;
+    vertical-align: middle;
+    margin-bottom: 0;
+    /* background: var(--mid-dark); */
+    height: 100%;
+    width: 180px;
+    max-width: 180px;
+}
+.liGroup input {
+    background: #EAEDE8;
+    height: calc(100% - 0px);
+    max-height: calc(100% - 0px);
+    padding: 5px 20px 5px 10px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 162px;
+}
+.liGroup input:focus {
+    background: var(--mid-dark);
+    outline: none;
+    border: none;
+}
+.liGroup input:focus~label {
+    background: #fff;
+}
+
+.checkgroup {
+    display: inline-block;
+    vertical-align: middle;
+}
+.checkgroup input {
+    margin-right: 5px;
+    width: auto;
+}
+
+.hraCalcBtn {
+    border: none;
+    background: var(--mid-dark);
+    color: #fff;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    cursor: pointer;
+}
+.hraCalcBtn:hover {
+    background: var(--dark-color);
+}
+.hracalTxt {
+    display: none;
+    background: var(--dark-color);
+    color: #fff;
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-align: center;    
+}
+
+@media screen and (max-width: 500px) {
+    .liGro {
+        display: flex;
+    }
+    .checkgroup {
+        display: flex;
+        align-items: center;
+    }
+}
