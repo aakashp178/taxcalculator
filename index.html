@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hraPopup.css">
     <script src="script.js" defer></script>
 </head>
 
@@ -59,7 +60,7 @@
 
                         <label for="exemption">Exemption</label>
                         <div class="labelGroup">
-                            <label for="totalIncome">HRA <span>(<a href="/hra.html">HRA Calculator</a>)</span></label>
+                            <label for="totalIncome">HRA <span>(<span id="hraModal">HRA Calculator</span>)</span></label>
                             <label for="totalIncome">LTA</label>
                             <label for="totalIncome">Other Exemption</label>
                         </div>
@@ -200,6 +201,38 @@
                             </tr>
                         </table>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="hraPopup">
+            <div class="popupBlock">
+                <h1>Calculator Your HRA</h1>
+                <div class="closeIcon">X</div>
+                <div class="formBlock">
+                    <form action="">
+                        <div class="liGroup">
+                            <label for="basicSalary">Basic Salary (Year) :</label>
+                            <input id="basicSalary" type="number" autocomplete="off" autofocus>
+                        </div>
+                        <div class="liGroup">
+                            <label for="totalHra">HRA (Year) :</label>
+                            <input id="totalHra" type="number" autocomplete="off">
+                        </div>
+                        <div class="liGroup">
+                            <label for="rentPaid">Rent Paid (Year) :</label>
+                            <input id="rentPaid" type="number" autocomplete="off">
+                        </div>
+                        <div class="liGroup">
+                            <label for="isLiveMetroCity">Do you live in metro city :</label>
+                            <div class="checkgroup">
+                                <input id="isLiveMetroCity" type="checkbox">Yes                            
+                            </div>
+                            <!-- <input id="basicSalary" type="number" autocomplete="off"> -->
+                        </div>
+                    </form>
+
+                    <button class="hraCalcBtn">Calculate HRA</button>
+                    <h4 class="hracalTxt">Your HRA will be: <span class="hraAmt">72000</span></h4>
                 </div>
             </div>
         </div>
