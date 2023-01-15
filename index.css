@@ -263,12 +263,21 @@ td:first-child {
 td:last-child {
     width: 150px;
 }
-#hraModal {
+.hraModal {
     cursor: pointer;
     color: blue;
 }
+.hraModal.top {
+    display: none;
+}
 
-@media screen and (max-width:655px) {
+@media screen and (max-width:660px) {
+    .hraModal {
+        display: none;
+    }
+    .hraModal.top {
+        display: inline-block;
+    }
     .inputInfoGroup {
         width: 100%;
     }
@@ -281,4 +290,17 @@ td:last-child {
     .mixInputs .inputInfoGroup:last-child input {
         border-radius: 0 0 10px 10px;
     }
+    .mixInputs .inputInfoGroup:not(:last-child) input {
+        border-right: none;
+    }
+    .taxAmoutBlock {
+        width: 100%;
+    }
+    .taxCard {
+        min-width: 100%;
+    }
+    .labelGroup {
+        display: none;
+    }
 }
+
