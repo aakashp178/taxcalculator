@@ -58,9 +58,9 @@
                         </div>
 
 
-                        <label for="exemption">Exemption</label>
+                        <label for="exemption" class="exe">Exemption</label> <span class="hraModal top">(HRA Calculator)</span>
                         <div class="labelGroup">
-                            <label for="totalIncome">HRA <span>(<span id="hraModal">HRA Calculator</span>)</span></label>
+                            <label for="totalIncome">HRA <span>(<span class="hraModal">HRA Calculator</span>)</span></label>
                             <label for="totalIncome">LTA</label>
                             <label for="totalIncome">Other Exemption</label>
                         </div>
@@ -108,13 +108,13 @@
 
                         <label for="deductions">Deductions <span>(Don't add standard Deduction)</span></label>
                         <div class="labelGroup">
-                            <label for="totalIncome">EPF, PPF, etc..</label>
-                            <label for="totalIncome">Medical Insurance</label>
-                            <label for="totalIncome">Other Deductions</label>
+                            <label for="totalIncome">Section 80C</label>
+                            <label for="totalIncome">Section 80D</label>
+                            <label for="totalIncome">Other Section 80</label>
                         </div>
                         <div class="mixInputs">
                             <div class="inputInfoGroup">
-                                <input class="input80C" type="number" placeholder="Section 80C" autocomplete="off">
+                                <input class="input80C" type="number" placeholder="EPF, PPF, etc.." autocomplete="off">
                                 <span class="info">i</span>
                                 <div class="infoBox">
                                     Section 80C is allows to reduce taxable income by making tax saving investments or
@@ -127,7 +127,7 @@
                                 </div>
                             </div>
                             <div class="inputInfoGroup">
-                                <input class="input80D" type="number" placeholder="Section 80D" autocomplete="off">
+                                <input class="input80D" type="number" placeholder="Medical Insurance" autocomplete="off">
                                 <span class="info">i</span>
                                 <div class="infoBox">
                                     Section 80D – Medical Insurance <br>
@@ -143,7 +143,7 @@
                                 </div>
                             </div>
                             <div class="inputInfoGroup">
-                                <input class="otherDeductions" type="number" placeholder="Other Section 80"
+                                <input class="otherDeductions" type="number" placeholder="Other Deductions"
                                     autocomplete="off">
                                 <span class="info">i</span>
                                 <div class="infoBox">
