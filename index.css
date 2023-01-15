@@ -263,7 +263,10 @@ td:first-child {
 td:last-child {
     width: 150px;
 }
-
+#hraModal {
+    cursor: pointer;
+    color: blue;
+}
 
 @media screen and (max-width:655px) {
     .inputInfoGroup {
