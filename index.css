@@ -267,17 +267,8 @@ td:last-child {
     cursor: pointer;
     color: blue;
 }
-.hraModal.top {
-    display: none;
-}
 
 @media screen and (max-width:660px) {
-    .hraModal {
-        display: none;
-    }
-    .hraModal.top {
-        display: inline-block;
-    }
     .inputInfoGroup {
         width: 100%;
     }
