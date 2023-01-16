@@ -110,8 +110,8 @@ label span {
     bottom: 50px;
     width: 0px;
     height: 0px;
-    /* width: 400px;
-    height: 120px; */
+    width: 400px;
+    height: auto;
     transform: scale(0);
     background: var(--dark-color);
     color: #FFF;
@@ -119,17 +119,20 @@ label span {
     border-radius: 10px 10px 30px 0;
     padding: 10px;
     overflow-y: auto;
+    font-size: 12px;
     transition: .3s all ease-in-out;
 }
 
 .inputInfoGroup .info:hover~.infoBox {
     display: block;
-    width: 400px;
-    height: 120px;
+    /* width: 400px;
+    height: auto; */
     transform: scale(1);
     /* display: block; */
 }
-
+.mixInputs .inputInfoGroup:last-child .infoBox {
+    width: auto;
+}
 .inputInfoGroup .infoBox::after {}
 
 .mixInputs .inputInfoGroup:first-child input {
@@ -283,6 +286,9 @@ td:last-child {
     }
     .mixInputs .inputInfoGroup:not(:last-child) input {
         border-right: none;
+    }
+    .inputInfoGroup .infoBox {
+        width: auto;
     }
     .taxAmoutBlock {
         width: 100%;
