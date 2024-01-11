@@ -117,5 +117,5 @@ document.querySelector('.closeIcon').addEventListener('click', () => {
     if(FinalHRA) {
         hra.value = FinalHRA;
     }
-    document.querySelector('.hraPopup').style.display = 'none';
+    document.querySelector('.hraPopup').style.display = 'none'; 
 })
